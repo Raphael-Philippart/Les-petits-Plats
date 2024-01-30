@@ -1,0 +1,31 @@
+@startuml
+
+actor Utilisateur as U
+control "GestionnaireRecettes" as GR
+control "MoteurRecherche" as MR
+database "Base de Données Recettes" as BD
+
+autonumber
+
+U -> GR: Recherche recettes
+GR -> MR: Recherche par mots-clés
+MR -> BD: Requête de recherche (Titre, Ingrédients, Description)
+BD --> MR: Résultats de recherche
+MR -> GR: Résultats de recherche
+GR -> U: Affichage résultats dans l'interface
+
+U -> GR: Préciser recherche (ingrédients, ustensiles, appareil)
+GR -> MR: Mise à jour du moteur de recherche avec spécifications
+MR -> BD: Requête de recherche avancée
+BD --> MR: Résultats de recherche avancée
+MR -> GR: Résultats de recherche avancée
+GR -> U: Affichage résultats avancés dans l'interface
+
+U -> GR: Sélectionner un mot clé
+GR -> MR: Ajout du mot clé aux tags de recherche
+MR -> BD: Requête de recherche mise à jour avec tags
+BD --> MR: Résultats de recherche mis à jour avec tags
+MR -> GR: Résultats de recherche mis à jour avec tags
+GR -> U: Affichage résultats mis à jour dans l'interface
+
+@enduml

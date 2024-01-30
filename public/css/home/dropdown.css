@@ -1,0 +1,226 @@
+#dropdowns {
+    position: relative;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fill, minmax(188px, 1fr));
+    grid-template-rows: 30px auto;
+    gap: 20px;
+    margin-bottom: 20px;
+    z-index: 99;
+}
+
+.dropdown {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.dropdown-length {
+    position: absolute;
+    right: 0;
+    align-self: center;
+    grid-column: span 2;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: Anton_R, sans-serif;
+}
+
+.dropdown-rounded-open {
+    border-radius: 11px 11px 0 0;
+}
+
+.dropdown-rounded-close {
+    border-radius: 11px;
+}
+
+.dropdown-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    text-align: left;
+    background: #FFF;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    font-family: Manrope_R, sans-serif;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-arrow-open {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-option {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    border-radius: 0 0 11px 11px;
+    overflow: auto;
+    z-index: 99;
+    background: #FFF;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.dropdown-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.dropdown-list-item > li {
+    width: 100%;
+    padding: 10px 0;
+    align-self: center;
+}
+
+.dropdown-list-item > li > p {
+    line-height: 20px;
+}
+
+.dropdown-list-item:hover {
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.dropdown-list-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.selected > .dropdown-list-item:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    width: 17px;
+    height: 17px;
+    transform: translate(-50%, -50%);
+    background-image: url('./../../img/close.svg');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.selected > .dropdown-list-item:hover:after {
+    opacity: 1;
+    font-weight: bold;
+    transition: opacity .2s ease-in-out;
+}
+
+.dropdown-search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.dropdown-search-input {
+    order: 1;
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    border-radius: 2px;
+    border-top: 1px solid #C6C6C6;
+    border-right: 0;
+    border-bottom: 1px solid #C6C6C6;
+    border-left: 1px solid #C6C6C6;
+}
+
+.dropdown-search-label,
+.dropdown-search-reset {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    min-width: 30px;
+    border-top: 1px solid #C6C6C6;
+    border-right: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    border-left: 0;
+    cursor: pointer;
+}
+
+.dropdown-search-reset {
+    order: 2;
+    min-width: 20px;
+    border-right: 0;
+}
+
+.dropdown-search-label > img {
+    width: 14px;
+    height: 14px;
+}
+
+.dropdown-search-reset-img {
+    width: 6px;
+    height: 6px;
+}
+
+.selected {
+    margin-bottom: 15px;
+}
+
+.selected > .dropdown-list-item:hover {
+    font-weight: 700;
+}
+
+.selected > .dropdown-list-item {
+    background: var(--color-primary);
+    margin-bottom: 1px;
+}
+
+/*
+@media only screen and (max-width: 600px) {
+    #dropdowns {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-template-rows: 20px auto;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .dropdown {
+        width: 130px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}*/

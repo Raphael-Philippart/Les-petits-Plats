@@ -1,0 +1,165 @@
+header {
+    height: 267px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: url("../../img/Header-Backgroung.png") no-repeat center;
+    background-origin: content-box;
+    background-size: cover;
+}
+
+header > div:first-child {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div:first-child > div:first-child {
+    align-self: flex-start;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+header > div:first-child > div:nth-child(2) > h1 {
+    text-align: center;
+    font-weight: 400;
+    font-family: Anton_R, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+#searchForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#searchInput {
+    width: 95%;
+    height: 32px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 11px 0 0 11px;
+    padding: 0 0 0 25px;
+}
+
+#searchForm > label > span {
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 32px;
+    padding: 5px;
+    border-radius: 0 11px 11px 0;
+}
+
+#searchForm > label > span > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+   justify-content: flex-start;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        height: 367px;
+    }
+    header > div:first-child {
+        padding: 20px;
+    }
+    header > div:first-child > div:first-child {
+        margin-bottom: 50px;
+    }
+    header > div:first-child > div:nth-child(2) > h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    #searchInput {
+        width: 80%;
+        height: 42px;
+    }
+    #searchForm > label > span {
+        height: 42px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 467px;
+    }
+    header > div:first-child {
+        padding: 30px;
+    }
+    header > div:first-child > div:first-child {
+        margin-bottom: 170px;
+    }
+    header > div:first-child > div:nth-child(2) > h1 {
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+    #searchInput {
+        width: 70%;
+        height: 42px;
+    }
+    #searchForm > label > span {
+        height: 42px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+        height: 567px;
+    }
+    header > div:first-child {
+        padding: 40px;
+    }
+    header > div:first-child > div:first-child {
+        margin-bottom: 200px;
+    }
+    header > div:first-child > div:nth-child(2) > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    #searchInput {
+        width: 65%;
+        height: 52px;
+    }
+    #searchForm > label > span {
+        height: 52px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        height: 667px;
+    }
+    header > div:first-child {
+        padding: 50px;
+    }
+    header > div:first-child > div:nth-child(2) > h1 {
+        font-size: 3rem;
+    }
+    #searchInput {
+        width: 60%;
+        height: 72px;
+    }
+    #searchForm > label > span {
+        height: 72px;
+        padding: 10px;
+    }
+}

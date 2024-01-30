@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ESNext",
+    /* Modules */
+    "module": "ES2020",
+    /* Emit */
+    "outDir": "./build",
+    /* Interop Constraints */
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking */
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "ESNext"],
+  }
+}

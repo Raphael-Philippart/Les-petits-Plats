@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Manrope_R';
+    src: url('../fonts/Manrope-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anton_R';
+    src: url('../fonts/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primary : #FFD15B;
+    --font-color: #000;
+    --font-color-secondary : #7A7A7A;
+}
+
+input:focus {
+    outline: none;
+}

@@ -1,0 +1,67 @@
+@import "./custom.css";
+@import "./home/header.css";
+@import "./home/dropdown.css";
+@import "./home/recipes.css";
+@import "./home/tags.css";
+
+html {
+    background: #ededed;
+}
+
+body {
+    color: var(--font-color);
+    font-size: 14px;
+    font-family: Manrope_R, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.bg-secondary {
+    background: var(--color-primary);
+}
+
+.p-responsive {
+    padding: 0 10px;
+}
+
+.rounded {
+    border-radius: 21px;
+}
+
+.rounded-top {
+    border-radius: 21px 21px 0 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .p-responsive {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .p-responsive {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .p-responsive {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .p-responsive {
+        padding: 0 50px;
+    }
+}
