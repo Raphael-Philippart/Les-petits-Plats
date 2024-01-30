@@ -28,7 +28,6 @@ const tagComponent = (tag: string) => {
     divElement.addEventListener('click', () => {
       SessionStorage().removeTag(tag);
       Interface();
-      console.log('CLICK TAG');
     })
   })()
 

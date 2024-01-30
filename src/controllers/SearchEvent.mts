@@ -28,7 +28,6 @@ const SearchEvent = (): void => {
   });
 
   searchLabel.addEventListener('click', () => {
-    console.log('Label Submit');
     labelImageEvent(searchLabel);
   });
 
