@@ -9,7 +9,7 @@ Application Developer - JavaScript React Path
 Typescript Dependency
 
 ```
-yarn add -G typescript
+yarn global add typescript
 ```
 
 Build
