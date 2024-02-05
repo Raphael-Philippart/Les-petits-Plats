@@ -16,6 +16,7 @@ const dropdownComponent = (options: T_Options) => {
   const idLabel: string = `dropdown-${options.title.toLowerCase()}-label`;
 
   const divAttributes: T_ElementAttributes = {
+    role: 'menu',
     ariaHaspopup: 'true',
     ariaExpanded: 'false',
   };
