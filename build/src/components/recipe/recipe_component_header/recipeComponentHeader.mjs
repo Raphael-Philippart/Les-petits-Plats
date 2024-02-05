@@ -3,7 +3,7 @@ import createDivContainer from '../../ui/createDivContainer.mjs';
 import recipeComponentHeaderTime from './recipeComponentHeaderTime.mjs';
 const recipeComponentHeader = (recipe) => {
     const imageAttributes = {
-        src: `/public/img/recette/${recipe.image}`,
+        src: `public/img/recette/${recipe.image}`,
         alt: `${recipe.name}`,
     };
     const divClass = ['recipe-header'];
