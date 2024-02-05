@@ -1,0 +1,15 @@
+@startuml
+participant "User" as U
+participant "search function" as SF
+entity "SessionStorage" as SS
+database "Recipe Database" as RD
+
+autonumber
+U -> SF : Initiates search with keywords or tags
+SF -> SS : Retrieves keywords and tags from SessionStorage
+SS --> SF : Returns keywords and tags
+SF -> SF : Transforms the keywords and tags into lowercase search terms
+SF -> RD : Iterates over each recipe to check for the presence of each term
+RD --> SF : Returns recipes that includes all search terms
+SF -> U : Returns a list of recipes that includes all search terms
+@enduml
