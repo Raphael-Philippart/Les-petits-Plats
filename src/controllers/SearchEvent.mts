@@ -50,11 +50,11 @@ const labelImage = (active: boolean) => {
     alt: `Soumettre la recherche`,
   };
   const imageDefaultAttributes: T_ElementAttributes = {
-    src: `/public/img/default-label.svg`,
+    src: `public/img/default-label.svg`,
     ...imageAttributes,
   };
   const imageActiveAttributes: T_ElementAttributes = {
-    src: `/public/img/active-label.svg`,
+    src: `public/img/active-label.svg`,
     ...imageAttributes,
   };
   const imageClass: string[] = ['label-submit-img'];
