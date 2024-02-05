@@ -2,6 +2,7 @@ import createElement from '../../ui/createElement.mjs';
 const dropdownComponentHeader = (id, title) => {
     const buttonAttributes = {
         id,
+        role: 'menu',
         ariaHaspopup: 'true',
         ariaExpanded: 'false',
         ariaControls: `dropdown-${title.toLowerCase()}`,
