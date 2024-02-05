@@ -25,17 +25,30 @@ const search = () => {
      * Combine search and tags into a single array of lowercase terms.
      * @type {string[]}
      */
-    const allTerms = [...searchTerms, ...tagsTerms];
+    const allTerms = searchTerms.concat(tagsTerms);
+    /**
+     * Filter recipes based on whether they contain all the search terms.
+     */
     return recipes.filter(recipe => {
-        const matches = allTerms.map(term => {
-            return (recipe.name.toLowerCase().includes(term)
-                || recipe.description.toLowerCase().includes(term)
-                || recipe.ingredients.some((ingredient) => ingredient.ingredient.toLowerCase().includes(term))
-                || recipe.appliance.toLowerCase().includes(term)
-                || recipe.ustensils.some(ustensil => ustensil.toLowerCase().includes(term)));
+        return allTerms.every(term => {
+            // Search in the name
+            if (recipe.name.toLowerCase().includes(term))
+                return true;
+            // Search in the description
+            if (recipe.description.toLowerCase().includes(term))
+                return true;
+            // Search in the ingredients
+            if (recipe.ingredients.some((ingredient) => ingredient.ingredient.toLowerCase().includes(term)))
+                return true;
+            // Search in the appliance
+            if (recipe.appliance.toLowerCase().includes(term))
+                return true;
+            // Search in the ustensils
+            if (recipe.ustensils.some(ustensil => ustensil.toLowerCase().includes(term)))
+                return true;
+            // The term was not found in this recipe
+            return false;
         });
-        // if `matches` does not include `false`, then all terms were found
-        return !matches.includes(false);
     });
 };
 export default search;
