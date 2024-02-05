@@ -1,7 +1,7 @@
 import createElement from '../../ui/createElement.mjs';
 const dropdownComponentBodySearchLabel = (id) => {
     const imageAttributes = {
-        src: `/public/img/label.svg`,
+        src: `public/img/label.svg`,
     };
     const labelAttributes = {
         for: id,

@@ -3,7 +3,7 @@ import { T_ElementAttributes } from '../../../type/type.mjs';
 
 const dropdownComponentBodySearchLabel = (id: string) => {
   const imageAttributes: T_ElementAttributes = {
-    src: `/public/img/label.svg`,
+    src: `public/img/label.svg`,
   };
   const labelAttributes: T_ElementAttributes = {
     for: id,
