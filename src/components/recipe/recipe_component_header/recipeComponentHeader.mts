@@ -5,7 +5,7 @@ import recipeComponentHeaderTime from './recipeComponentHeaderTime.mjs';
 
 const recipeComponentHeader = (recipe: T_Recipe) => {
   const imageAttributes: T_ElementAttributes = {
-    src: `/public/img/recette/${recipe.image}`,
+    src: `public/img/recette/${recipe.image}`,
     alt: `${recipe.name}`,
   };
   const divClass: string[] = ['recipe-header'];
