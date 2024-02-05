@@ -1,7 +1,7 @@
 import createElement from '../../ui/createElement.mjs';
 const dropdownComponentHeaderArrow = () => {
     const imageAttributes = {
-        src: `/public/img/arrow.svg`,
+        src: `public/img/arrow.svg`,
     };
     const arrowClass = ['dropdown-arrow'];
     const imageElement = createElement('img', imageAttributes);

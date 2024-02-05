@@ -42,11 +42,11 @@ const labelImage = (active) => {
         alt: `Soumettre la recherche`,
     };
     const imageDefaultAttributes = {
-        src: `/public/img/default-label.svg`,
+        src: `public/img/default-label.svg`,
         ...imageAttributes,
     };
     const imageActiveAttributes = {
-        src: `/public/img/active-label.svg`,
+        src: `public/img/active-label.svg`,
         ...imageAttributes,
     };
     const imageClass = ['label-submit-img'];
