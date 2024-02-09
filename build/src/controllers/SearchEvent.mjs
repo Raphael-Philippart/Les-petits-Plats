@@ -13,7 +13,7 @@ const SearchEvent = () => {
     });
     searchInput.addEventListener('keyup', () => {
         if (searchInput.value === '') {
-            search.removeSearch();
+            search.removeSearchAndTags();
             Interface();
         }
         else if (searchInput.value.length >= 3) {

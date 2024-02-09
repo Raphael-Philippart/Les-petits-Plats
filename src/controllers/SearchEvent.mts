@@ -17,7 +17,7 @@ const SearchEvent = (): void => {
 
   searchInput.addEventListener('keyup', () => {
     if (searchInput.value === '') {
-      search.removeSearch();
+      search.removeSearchAndTags();
       Interface();
     } else if (searchInput.value.length >= 3) {
       const secureSearch = searchInput.value;
