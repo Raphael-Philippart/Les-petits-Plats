@@ -8,7 +8,7 @@ const tagComponent = (tag: string) => {
     ariaLabel: 'Fermer le Tag',
   };
   const closeImageAttributes: T_ElementAttributes = {
-    src: `/public/img/reset.svg`,
+    src: `public/img/reset.svg`,
   };
   const divClass: string[] = ['tag'];
   const pClass: string[] = ['tag-text'];
