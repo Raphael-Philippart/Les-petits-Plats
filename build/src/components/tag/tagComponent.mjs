@@ -6,7 +6,7 @@ const tagComponent = (tag) => {
         ariaLabel: 'Fermer le Tag',
     };
     const closeImageAttributes = {
-        src: `/public/img/reset.svg`,
+        src: `public/img/reset.svg`,
     };
     const divClass = ['tag'];
     const pClass = ['tag-text'];
